@@ -16,6 +16,7 @@ class CookieConsent_Extension extends Extension
                 Requirements::insertHeadTags($siteConfig->customise(array('SiteConfig'=>$siteConfig))->renderWith('CookieConsent_min_js'));
                 Requirements::insertHeadTags($siteConfig->customise(array('SiteConfig'=>$siteConfig))->renderWith('CookieConsent_min_css'));
             }
+            Requirements::insertHeadTags($siteConfig->customise(array('SiteConfig'=>$siteConfig))->renderWith('CookieConsent_js'));
         }
     }
 }
