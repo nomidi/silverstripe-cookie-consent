@@ -1,0 +1,9 @@
+---
+Name: cookie-consent
+Before: 'mysite/*'
+After: 'framework/*','cms/*'
+---
+
+SiteConfig:
+  extensions:
+    - CookieConsent_Settings
