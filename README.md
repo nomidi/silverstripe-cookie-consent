@@ -1,5 +1,13 @@
 # silverstripe-cookie-consent
 
+Silverstripe Cookie Consent is a module which enables to configure
+the [cookie consent JavaScript plugin](https://cookieconsent.insites.com/) from [Insites](https://insites.com/)
+simply via the Administrator Backend.
+
+The Configuration is done via the `Settings`and the `Cookie Consent` tab.
+
+
+
 ## Updating Cookie Consent Locally
 
 This part is just interesting if you want to use the Inline version of Cookie Consent.
