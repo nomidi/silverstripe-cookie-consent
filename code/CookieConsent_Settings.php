@@ -13,7 +13,8 @@ class CookieConsent_Settings extends DataExtension
         'CookieComplianceType'  =>  "Enum('tell, optout, optin', 'tell')",
         'CookieMessage'  =>  'HTMLText',
         'CookieDismissButtonText'=>'Varchar(80)',
-        'CookieAcceptButtonText'=>'Varchar(80)'
+        'CookieAcceptButtonText'=>'Varchar(80)',
+        'CookieConsentUseCDN' => 'Boolean'
     );
 
     private static $has_one = array(
@@ -24,6 +25,7 @@ class CookieConsent_Settings extends DataExtension
     {
         $fields->addFieldToTab("Root", new Tab('CookieConsent'));
         $fields->addFieldToTab('Root.CookieConsent', CheckboxField::create("CookieConsentIsActive")->setTitle(_t('CookieConsent.ISACTIVE', "Is Active")));
+        $fields->addFieldToTab('Root.CookieConsent', CheckboxField::create('CookieConsentUseCDN', _t('CookieConsent.COOKIECONSENTUSECDN', "Use CDN?")));
         $CookiePositionValues = array(
           'bannerbottom' => _t('CookieConsent.COOKIEPOSITIONBANNERBOTTOM', "Banner bottom"),
           'bannertop'=> _t('CookieConsent.COOKIEPOSITIONBANNERTOP', "Banner top"),
