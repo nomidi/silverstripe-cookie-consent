@@ -79,6 +79,6 @@ class CookieConsent_Settings extends DataExtension
         $CookieDismissButtonTextField->setAttribute('placeholder', _t('CookieConsent.COOKIEDISMISSBUTTONTEXTVALUE', "Got it!"));
 
         $fields->addFieldToTab('Root.CookieConsent', $CookieAcceptButtonTextField = new TextareaField('CookieAcceptButtonText', _t('CookieConsent.COOKIEACCEPTBUTTONTEXT', "Accept button text")));
-        $CookieDismissButtonTextField->setAttribute('placeholder', _t('CookieConsent.COOKIEACCEPTBUTTONTEXTVALUE', "Allow cookies"));
+        $CookieAcceptButtonTextField->setAttribute('placeholder', _t('CookieConsent.COOKIEACCEPTBUTTONTEXTVALUE', "Allow cookies"));
     }
 }

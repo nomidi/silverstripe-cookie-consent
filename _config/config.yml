@@ -3,6 +3,9 @@ Name: cookie-consent
 Before: 'mysite/*'
 After: 'framework/*','cms/*'
 ---
+Page_Controller:
+  extensions:
+    - CookieConsent_Extension
 
 SiteConfig:
   extensions:
