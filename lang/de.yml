@@ -2,13 +2,20 @@ de:
   CookieConsent:
     COOKIEACCEPTBUTTONTEXT: 'Akzeptieren - Button Text'
     COOKIEACCEPTBUTTONTEXTVALUE: 'Cookies erlauben'
+    COOKIEDECLINEBUTTONTEXT: 'Ablehnen - Button text'
+    COOKIEDECLINEBUTTONTEXTVALUE: 'Ablehnen'
     COOKIEBANNERBUTTONCOLOUR: 'HEX Farbe - Button'
+    COOKIEBANNERBUTTONCOLOURVALUE: 'z.B. 8ec760 (ohne #)'
     COOKIEBANNERBUTTONTEXTCOLOUR: 'HEX Farbe - Button Text'
+    COOKIEBANNERBUTTONTEXTCOLOURVALUE: 'z.B. ffffff (ohne #)'
     COOKIEBANNERCOLOUR: 'HEX Farbe - Banner'
+    COOKIEBANNERCOLOURVALUE: 'z.B. efefef (ohne #)'
     COOKIEBANNERTEXTCOLOUR: 'HEX Farbe - Banner Text'
+    COOKIEBANNERTEXTCOLOURVALUE: 'z.B. 404040 (ohne #)'
     COOKIECOMPLIANCETYPE: 'Zustimmungstyp'
     COOKIECOMPLIANCETYPELITERAL: 'Zustimmungstyp - Die Seite muss für die erweiterten Optionen angepasst werden!'
     COOKIECOMPLIANCETYPEOPTOUT: 'Opt-Out für Benutzer anbieten (Erweitert)'
+    COOKIECOMPLIANCETYPEOPTIN: 'Opt-In für Benutzer anbieten (Erweitert)'
     COOKIECOMPLIANCETYPETELL: 'Benutzern nur sagen, dass Cookies genutzt werden'
     COOKIECONSENTLITERAL: 'Mehr informationen zu Cookies Consent finden sie unter <a href=''https://cookieconsent.insites.com'' target=''_blank'' rel=''noopener''>cookieconsent.insites.com</a>'
     COOKIECONSENTUSECDN: 'Über CDN einbinden?'
@@ -17,11 +24,12 @@ de:
     COOKIELAYOUT: Layout
     COOKIELAYOUTBLOCK: Block
     COOKIELAYOUTCLASSIC: Classic
-    COOKIELAYOUTEDGELESS: 'Opt-In für Benutzer anbieten (Erweitert)'
+    COOKIELAYOUTEDGELESS: 'Edgeless'
     COOKIELAYOUTWIRE: Wire
     COOKIEMESSAGE: Nachricht
     COOKIEMESSAGELITERAL: 'Eigener Text'
     COOKIEMESSAGEVALUE: 'Um unsere Webseite für Sie optimal zu gestalten und fortlaufend verbessern zu können, verwenden wir Cookies. Durch die weitere Nutzung der Webseite stimmen Sie der Verwendung von Cookies zu.'
+    COOKIESLEARNMORETEXT: 'mehr erfahren'
     COOKIEPOSITIONBANNERBOTTOM: 'Banner unten'
     COOKIEPOSITIONBANNERTOP: 'Banner oben'
     COOKIEPOSITIONBANNERTOPPUSHDOWN: 'Banner oben (pushdown)'

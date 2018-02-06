@@ -11,10 +11,15 @@ window.cookieconsent.initialise({
       <% if $CookieLayout == 'classic' %>
       "background": "wire",
       "border": "<% if $CookieBannerButtonColour %>$CookieBannerButtonColour<% else %>#ffffff<% end_if %>",
+      "text": "<% if $CookieBannerButtonTextColour %>$CookieBannerButtonTextColour<% else %>#8ec760<% end_if %>"
+      <% else_if $CookieLayout == 'wire' %>
+        "background": "transparent",
+        "text": "<% if $CookieBannerButtonColour %>$CookieBannerButtonColour<% else %>#ffffff<% end_if %>",
+        "border": "<% if $CookieBannerButtonColour %>$CookieBannerButtonColour<% else %>#ffffff<% end_if %>"
       <% else %>
       "background": "<% if $CookieBannerButtonColour %>$CookieBannerButtonColour<% else %>#ffffff<% end_if %>",
-      <% end_if %>
       "text": "<% if $CookieBannerButtonTextColour %>$CookieBannerButtonTextColour<% else %>#8ec760<% end_if %>"
+      <% end_if %>
     }
   }
   <% if $CookieLayout == 'classic' %>
@@ -32,23 +37,23 @@ window.cookieconsent.initialise({
   <% else_if $CookiePosition == 'floatingright' %>
   ,"position": "bottom-right"
   <% end_if %>
-  <% if $LinkToPrivacy || $CookieMessage || $CookieDismissButtonText %>
   ,"content": {
-    "message": "<% if $CookieMessage %>$CookieMessage<% else %><%t CookieConsent.COOKIEMESSAGEVALUE %><% end_if %>"
+    "message": "<% if $CookieMessage %>$CookieMessage<% else %><%t CookieConsent.COOKIEMESSAGEVALUE 'This website uses cookies to ensure you get the best experience on our website.'%><% end_if %>"
     <% if $LinkToPrivacy %>,"href": "$LinkToPrivacy.AbsoluteLink" <% end_if %>
-    <% if $CookieDismissButtonText %>,"dismiss": "$CookieDismissButtonText" <% end_if %>
-    <% if $CookieAcceptButtonText %>,"link": "$CookieAcceptButtonText" <% end_if %>
+    ,"link": "<% if $CookieLearnMoreText%>$CookieLearnMoreText<% else %><%t CookieConsent.COOKIESLEARNMORETEXT 'Learn more' %><% end_if %>"
+    ,"dismiss": "<% if $CookieDismissButtonText %>$CookieDismissButtonText<% else %><%t CookieConsent.COOKIEDISMISSBUTTONTEXTVALUE 'Got it!' %><% end_if %>"
+    <% if $CookieComplianceType == 'optin' %>,"allow":"<% if $CookieAcceptButtonText %>$CookieAcceptButtonText<% else %><%t CookieConsent.COOKIEACCEPTBUTTONTEXTVALUE 'Allow cookies' %><% end_if %>"
+    <% else_if $CookieComplianceType == 'optout' %>,"deny":"<% if $CookieDeclineButtonText %>$CookieDeclineButtonText<% else %><%t CookieConsent.COOKIEDECLINEBUTTONTEXTVALUE 'Decline' %><% end_if %>"
+    <% end_if %>
   }
-  <% else_if $CookiesAndYouIsActive == 0%>
+  <% if CookiesAndYouIsActive == 0 && $LinkToPrivacyID  == 0 %>
   ,"showLink": false
   <% end_if %>
-
   <% if $CookieComplianceType == 'optout' %>
   ,"type": "opt-out"
   <% else_if $CookieComplianceType == 'optin' %>
   ,"type": "opt-in"
   <% end_if %>
-
 })});
 </script>
 <% end_with %>

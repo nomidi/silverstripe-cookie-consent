@@ -2,13 +2,20 @@ en:
   CookieConsent:
     COOKIEACCEPTBUTTONTEXT: 'Accept button text'
     COOKIEACCEPTBUTTONTEXTVALUE: 'Allow cookies'
+    COOKIEDECLINEBUTTONTEXT: 'Decline button text'
+    COOKIEDECLINEBUTTONTEXTVALUE: 'Decline'
     COOKIEBANNERBUTTONCOLOUR: 'HEX Button colour'
+    COOKIEBANNERBUTTONCOLOURVALUE: 'e.g. 8ec760 (without leading #)'
     COOKIEBANNERBUTTONTEXTCOLOUR: 'HEX Button text colour'
+    COOKIEBANNERBUTTONTEXTCOLOURVALUE: 'e.g. ffffff (without leading #)'
     COOKIEBANNERCOLOUR: 'HEX Banner colour'
+    COOKIEBANNERCOLOURVALUE: 'e.g. efefef (without leading #)'
     COOKIEBANNERTEXTCOLOUR: 'HEX Banner text colour'
+    COOKIEBANNERTEXTCOLOURVALUE: 'e.g. 404040 (without leading #)'
     COOKIECOMPLIANCETYPE: 'Compliance type'
     COOKIECOMPLIANCETYPELITERAL: 'Compliance type - You must modify your site for advanced options to work!'
     COOKIECOMPLIANCETYPEOPTOUT: 'Let users opt out of cookies (Advanced)'
+    COOKIECOMPLIANCETYPEOPTIN: 'Ask users to opt into cookies (Advanced)'
     COOKIECOMPLIANCETYPETELL: 'Just tell users that we use cookies'
     COOKIECONSENTLITERAL: 'Find more information about cookie consent on <a href=''https://cookieconsent.insites.com'' target=''_blank'' rel=''noopener''>cookieconsent.insites.com</a>'
     COOKIECONSENTUSECDN: 'Use CDN?'
@@ -17,11 +24,12 @@ en:
     COOKIELAYOUT: Layout
     COOKIELAYOUTBLOCK: Block
     COOKIELAYOUTCLASSIC: Classic
-    COOKIELAYOUTEDGELESS: 'Ask users to opt into cookies (Advanced)'
+    COOKIELAYOUTEDGELESS: 'Edgeless'
     COOKIELAYOUTWIRE: Wire
     COOKIEMESSAGE: Message
     COOKIEMESSAGELITERAL: 'Custom text'
     COOKIEMESSAGEVALUE: 'This website uses cookies to ensure you get the best experience on our website.'
+    COOKIESLEARNMORETEXT: 'Learn more'
     COOKIEPOSITIONBANNERBOTTOM: 'Banner bottom'
     COOKIEPOSITIONBANNERTOP: 'Banner top'
     COOKIEPOSITIONBANNERTOPPUSHDOWN: 'Banner top (pushdown)'
