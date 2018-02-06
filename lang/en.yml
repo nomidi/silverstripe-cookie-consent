@@ -10,7 +10,7 @@ en:
     COOKIECOMPLIANCETYPELITERAL: 'Compliance type - You must modify your site for advanced options to work!'
     COOKIECOMPLIANCETYPEOPTOUT: 'Let users opt out of cookies (Advanced)'
     COOKIECOMPLIANCETYPETELL: 'Just tell users that we use cookies'
-    COOKIECONSENTLITERAL: 'Find ore information about cookie consent on <a href=''https://cookieconsent.insites.com'' target=''_blank'' rel=''noopener''>cookieconsent.insites.com</a>'
+    COOKIECONSENTLITERAL: 'Find more information about cookie consent on <a href=''https://cookieconsent.insites.com'' target=''_blank'' rel=''noopener''>cookieconsent.insites.com</a>'
     COOKIECONSENTUSECDN: 'Use CDN?'
     COOKIEDISMISSBUTTONTEXT: 'Dismiss button text'
     COOKIEDISMISSBUTTONTEXTVALUE: 'Got it!'

@@ -1,0 +1,35 @@
+de:
+  CookieConsent:
+    COOKIEACCEPTBUTTONTEXT: 'Akzeptieren - Button Text'
+    COOKIEACCEPTBUTTONTEXTVALUE: 'Cookies erlauben'
+    COOKIEBANNERBUTTONCOLOUR: 'HEX Farbe - Button'
+    COOKIEBANNERBUTTONTEXTCOLOUR: 'HEX Farbe - Button Text'
+    COOKIEBANNERCOLOUR: 'HEX Farbe - Banner'
+    COOKIEBANNERTEXTCOLOUR: 'HEX Farbe - Banner Text'
+    COOKIECOMPLIANCETYPE: 'Zustimmungstyp'
+    COOKIECOMPLIANCETYPELITERAL: 'Zustimmungstyp - Die Seite muss für die erweiterten Optionen angepasst werden!'
+    COOKIECOMPLIANCETYPEOPTOUT: 'Opt-Out für Benutzer anbieten (Erweitert)'
+    COOKIECOMPLIANCETYPETELL: 'Benutzern nur sagen, dass Cookies genutzt werden'
+    COOKIECONSENTLITERAL: 'Mehr informationen zu Cookies Consent finden sie unter <a href=''https://cookieconsent.insites.com'' target=''_blank'' rel=''noopener''>cookieconsent.insites.com</a>'
+    COOKIECONSENTUSECDN: 'Über CDN einbinden?'
+    COOKIEDISMISSBUTTONTEXT: 'Text für den Ablehnen Button.'
+    COOKIEDISMISSBUTTONTEXTVALUE: 'Habs verstanden!'
+    COOKIELAYOUT: Layout
+    COOKIELAYOUTBLOCK: Block
+    COOKIELAYOUTCLASSIC: Classic
+    COOKIELAYOUTEDGELESS: 'Opt-In für Benutzer anbieten (Erweitert)'
+    COOKIELAYOUTWIRE: Wire
+    COOKIEMESSAGE: Nachricht
+    COOKIEMESSAGELITERAL: 'Eigener Text'
+    COOKIEMESSAGEVALUE: 'Um unsere Webseite für Sie optimal zu gestalten und fortlaufend verbessern zu können, verwenden wir Cookies. Durch die weitere Nutzung der Webseite stimmen Sie der Verwendung von Cookies zu.'
+    COOKIEPOSITIONBANNERBOTTOM: 'Banner unten'
+    COOKIEPOSITIONBANNERTOP: 'Banner oben'
+    COOKIEPOSITIONBANNERTOPPUSHDOWN: 'Banner oben (pushdown)'
+    COOKIEPOSITIONFLOATINGLEFT: 'Links fliessend'
+    COOKIEPOSITIONFLOATINGRIGHT: 'Rechts fliessend'
+    COOKIESANDYOUISACTIVE: 'Link zu cookiesandyou.com'
+    ISACTIVE: 'Ist aktiv?'
+    LINKTOPRIVACY: 'Link zu ihrer eigenen Policy'
+    LINKTOPRIVACYLITERAL: 'Mehr erfahren Link'
+    LINKTOPRIVACYLITERALOR: Oder
+    POSITION: Position
