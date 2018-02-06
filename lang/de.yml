@@ -13,7 +13,7 @@ de:
     COOKIECONSENTLITERAL: 'Mehr informationen zu Cookies Consent finden sie unter <a href=''https://cookieconsent.insites.com'' target=''_blank'' rel=''noopener''>cookieconsent.insites.com</a>'
     COOKIECONSENTUSECDN: 'Über CDN einbinden?'
     COOKIEDISMISSBUTTONTEXT: 'Text für den Ablehnen Button.'
-    COOKIEDISMISSBUTTONTEXTVALUE: 'Habs verstanden!'
+    COOKIEDISMISSBUTTONTEXTVALUE: 'OK!'
     COOKIELAYOUT: Layout
     COOKIELAYOUTBLOCK: Block
     COOKIELAYOUTCLASSIC: Classic
