@@ -1,0 +1,35 @@
+en:
+  CookieConsent:
+    COOKIEACCEPTBUTTONTEXT: 'Accept button text'
+    COOKIEACCEPTBUTTONTEXTVALUE: 'Allow cookies'
+    COOKIEBANNERBUTTONCOLOUR: 'HEX Button colour'
+    COOKIEBANNERBUTTONTEXTCOLOUR: 'HEX Button text colour'
+    COOKIEBANNERCOLOUR: 'HEX Banner colour'
+    COOKIEBANNERTEXTCOLOUR: 'HEX Banner text colour'
+    COOKIECOMPLIANCETYPE: 'Compliance type'
+    COOKIECOMPLIANCETYPELITERAL: 'Compliance type - You must modify your site for advanced options to work!'
+    COOKIECOMPLIANCETYPEOPTOUT: 'Let users opt out of cookies (Advanced)'
+    COOKIECOMPLIANCETYPETELL: 'Just tell users that we use cookies'
+    COOKIECONSENTLITERAL: 'Find ore information about cookie consent on <a href=''https://cookieconsent.insites.com'' target=''_blank'' rel=''noopener''>cookieconsent.insites.com</a>'
+    COOKIECONSENTUSECDN: 'Use CDN?'
+    COOKIEDISMISSBUTTONTEXT: 'Dismiss button text'
+    COOKIEDISMISSBUTTONTEXTVALUE: 'Got it!'
+    COOKIELAYOUT: Layout
+    COOKIELAYOUTBLOCK: Block
+    COOKIELAYOUTCLASSIC: Classic
+    COOKIELAYOUTEDGELESS: 'Ask users to opt into cookies (Advanced)'
+    COOKIELAYOUTWIRE: Wire
+    COOKIEMESSAGE: Message
+    COOKIEMESSAGELITERAL: 'Custom text'
+    COOKIEMESSAGEVALUE: 'This website uses cookies to ensure you get the best experience on our website.'
+    COOKIEPOSITIONBANNERBOTTOM: 'Banner bottom'
+    COOKIEPOSITIONBANNERTOP: 'Banner top'
+    COOKIEPOSITIONBANNERTOPPUSHDOWN: 'Banner top (pushdown)'
+    COOKIEPOSITIONFLOATINGLEFT: 'Floating left'
+    COOKIEPOSITIONFLOATINGRIGHT: 'Floating right'
+    COOKIESANDYOUISACTIVE: 'Link to cookiesandyou.com'
+    ISACTIVE: 'Is Active'
+    LINKTOPRIVACY: 'Link to your own policy'
+    LINKTOPRIVACYLITERAL: 'Learn more link'
+    LINKTOPRIVACYLITERALOR: Or
+    POSITION: Position
