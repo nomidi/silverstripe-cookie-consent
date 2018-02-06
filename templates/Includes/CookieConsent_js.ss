@@ -34,10 +34,10 @@ window.cookieconsent.initialise({
   <% end_if %>
   <% if $LinkToPrivacy || $CookieMessage || $CookieDismissButtonText %>
   ,"content": {
-    <% if $CookieMessage %>"message": "$CookieMessage" <% end_if %>
-    <% if $LinkToPrivacy %><% if $CookieMessage %>, <% end_if %>"href": "$LinkToPrivacy.AbsoluteLink" <% end_if %>
-    <% if $CookieDismissButtonText %><% if $CookieMessage || $LinkToPrivacy %>, <% end_if %>"dismiss": "$CookieDismissButtonText" <% end_if %>
-    <% if $CookieAcceptButtonText %><% if $CookieMessage || $LinkToPrivacy || $CookieDismissButtonText %>, <% end_if %>"link": "$CookieAcceptButtonText" <% end_if %>
+    "message": "<% if $CookieMessage %>$CookieMessage<% else %><%t CookieConsent.COOKIEMESSAGEVALUE %><% end_if %>"
+    <% if $LinkToPrivacy %>,"href": "$LinkToPrivacy.AbsoluteLink" <% end_if %>
+    <% if $CookieDismissButtonText %>,"dismiss": "$CookieDismissButtonText" <% end_if %>
+    <% if $CookieAcceptButtonText %>,"link": "$CookieAcceptButtonText" <% end_if %>
   }
   <% else_if $CookiesAndYouIsActive == 0%>
   ,"showLink": false
