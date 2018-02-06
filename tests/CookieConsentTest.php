@@ -6,6 +6,7 @@ class CookieConsentTest extends FunctionalTest
   );
 
     public static $use_draft_site = true;
+    
     private $js_string = 'cookieconsent.min.js';
     private $cdn_css_string = 'cookieconsent.min.css';
     private $cc_call = 'window.cookieconsent.initialise({';
