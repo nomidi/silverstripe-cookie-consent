@@ -4,21 +4,21 @@ window.addEventListener("load", function(){
 window.cookieconsent.initialise({
   "palette": {
     "popup": {
-      "background": "<% if $CookieBannerColour %>$CookieBannerColour<% else %>#efefef<% end_if %>",
-      "text": "<% if $CookieBannerTextColour %>$CookieBannerTextColour<% else %>#404040<% end_if %>"
+      "background": "<% if $CookieBannerColour %>#$CookieBannerColour<% else %>#efefef<% end_if %>",
+      "text": "<% if $CookieBannerTextColour %>#$CookieBannerTextColour<% else %>#404040<% end_if %>"
     },
     "button": {
       <% if $CookieLayout == 'classic' %>
       "background": "wire",
-      "border": "<% if $CookieBannerButtonColour %>$CookieBannerButtonColour<% else %>#ffffff<% end_if %>",
-      "text": "<% if $CookieBannerButtonTextColour %>$CookieBannerButtonTextColour<% else %>#8ec760<% end_if %>"
+      "border": "<% if $CookieBannerButtonColour %>#$CookieBannerButtonColour<% else %>#ffffff<% end_if %>",
+      "text": "<% if $CookieBannerButtonTextColour %>#$CookieBannerButtonTextColour<% else %>#8ec760<% end_if %>"
       <% else_if $CookieLayout == 'wire' %>
         "background": "transparent",
-        "text": "<% if $CookieBannerButtonColour %>$CookieBannerButtonColour<% else %>#ffffff<% end_if %>",
-        "border": "<% if $CookieBannerButtonColour %>$CookieBannerButtonColour<% else %>#ffffff<% end_if %>"
+        "text": "<% if $CookieBannerButtonColour %>#$CookieBannerButtonColour<% else %>#ffffff<% end_if %>",
+        "border": "<% if $CookieBannerButtonColour %>#$CookieBannerButtonColour<% else %>#ffffff<% end_if %>"
       <% else %>
-      "background": "<% if $CookieBannerButtonColour %>$CookieBannerButtonColour<% else %>#ffffff<% end_if %>",
-      "text": "<% if $CookieBannerButtonTextColour %>$CookieBannerButtonTextColour<% else %>#8ec760<% end_if %>"
+      "background": "<% if $CookieBannerButtonColour %>#$CookieBannerButtonColour<% else %>#ffffff<% end_if %>",
+      "text": "<% if $CookieBannerButtonTextColour %>#$CookieBannerButtonTextColour<% else %>#8ec760<% end_if %>"
       <% end_if %>
     }
   }
