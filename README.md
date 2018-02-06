@@ -30,4 +30,4 @@ act accordingly. With this module you are just setting the configuration for Coo
 ## Todo
 
 - If CookieConsent runs locally, add the js internally - leads right now to issues with e.replace
-- Testing
+- Add more tests

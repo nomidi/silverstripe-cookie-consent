@@ -50,5 +50,22 @@ class CookieConsentTest extends FunctionalTest
 
         $check = strpos($body, $this->cc_call);
         $this->assertTrue(is_numeric($check), "Could not find the JavaScript call for cookieconsent within the response.");
+
+        // Check that nothing is in the response if moudle is not active!
+        $site->setField('CookieConsentIsActive', 0);
+        $site->write();
+
+        $response = $this->get($this->objFromFixture('Page', 'home')->Link());
+        $body = $response->getBody();
+
+        $check = strpos($body, $this->js_string);
+        $this->assertFalse(is_numeric($check), "Could find cookieconsent.min.js but module is not active!");
+
+        // check for min.css
+        $check = strpos($body, $this->cdn_css_string);
+        $this->assertFalse(is_numeric($check), "Could find cookieconsent.min.css but module is not active!");
+
+        $check = strpos($body, $this->cc_call);
+        $this->assertFalse(is_numeric($check), "Could find the JavaScript call for cookieconsent but module is not active.");
     }
 }
