@@ -4,10 +4,10 @@ class CookieConsent_Settings extends DataExtension
     private static $db = array(
         'CookiePosition' => "Enum('bannerbottom, bannertop, bannertoppushdown, floatingleft,floatingright', 'bannerbottom')",
         'CookieLayout' => "Enum('block, classic, edgeless, wire', 'block')",
-        'CookieBannerColour' => "Varchar(6)",
-        'CookieBannerTextColour' => "Varchar(6)",
-        'CookieBannerButtonColour' => "Varchar(6)",
-        'CookieBannerButtonTextColour' => "Varchar(6)",
+        'CookieBannerColour' => "Varchar(25)",
+        'CookieBannerTextColour' => "Varchar(25)",
+        'CookieBannerButtonColour' => "Varchar(25)",
+        'CookieBannerButtonTextColour' => "Varchar(25)",
         'CookieLearnMoreText' => 'Varchar(50)',
         'CookieConsentIsActive' => 'Boolean',
         'CookiesAndYouIsActive'=> 'Boolean',
@@ -45,22 +45,22 @@ class CookieConsent_Settings extends DataExtension
         );
         $fields->addFieldToTab('Root.CookieConsent', DropdownField::create("CookieLayout")->setSource($CookieLayoutValues)->setTitle(_t('CookieConsent.COOKIELAYOUT', "Layout")));
 
-        $fields->addFieldToTab('Root.CookieConsent', $CookieBannerColourField = new TextField('CookieBannerColour', _t('CookieConsent.COOKIEBANNERCOLOUR', "HEX Banner colour")));
+        $fields->addFieldToTab('Root.CookieConsent', $CookieBannerColourField = new TextField('CookieBannerColour', _t('CookieConsent.COOKIEBANNERCOLOUR', "Banner colour HEX/RGB/RGBA")));
         $CookieBannerColourField
-          ->setAttribute('placeholder', _t('CookieConsent.COOKIEBANNERCOLOURVALUE', "e.g. efefef (without leading #)"))
-          ->setMaxLength(6);
-        $fields->addFieldToTab('Root.CookieConsent', $CookieBannerTextColourField = new TextField('CookieBannerTextColour', _t('CookieConsent.COOKIEBANNERTEXTCOLOUR', "HEX Banner text colour")));
+          ->setAttribute('placeholder', _t('CookieConsent.COOKIEBANNERCOLOURVALUE', "e.g. #efefef/rgb(239,239,239)/rgba(239,239,239,.8)"))
+          ->setMaxLength(25);
+        $fields->addFieldToTab('Root.CookieConsent', $CookieBannerTextColourField = new TextField('CookieBannerTextColour', _t('CookieConsent.COOKIEBANNERTEXTCOLOUR', "Banner text colour HEX/RGB/RGBA")));
         $CookieBannerTextColourField
-          ->setAttribute('placeholder', _t('CookieConsent.COOKIEBANNERTEXTCOLOURVALUE', "e.g. 404040 (without leadeing #)"))
-          ->setMaxLength(6);
-        $fields->addFieldToTab('Root.CookieConsent', $CookieBannerButtonColourField = new TextField('CookieBannerButtonColour', _t('CookieConsent.COOKIEBANNERBUTTONCOLOUR', "HEX Button colour")));
+          ->setAttribute('placeholder', _t('CookieConsent.COOKIEBANNERTEXTCOLOURVALUE', "e.g. #404040/rgb(64,64,64)/rgba(64,64,64,.8)"))
+          ->setMaxLength(25);
+        $fields->addFieldToTab('Root.CookieConsent', $CookieBannerButtonColourField = new TextField('CookieBannerButtonColour', _t('CookieConsent.COOKIEBANNERBUTTONCOLOUR', "Button colour HEX/RGB/RGBA")));
         $CookieBannerButtonColourField
-          ->setAttribute('placeholder', _t('CookieConsent.COOKIEBANNERBUTTONCOLOURVALUE', "e.g. 8ec760 (without leading #)"))
-          ->setMaxLength(6);
-        $fields->addFieldToTab('Root.CookieConsent', $CookieBannerButtonTextColourField = new TextField('CookieBannerButtonTextColour', _t('CookieConsent.COOKIEBANNERBUTTONTEXTCOLOUR', "HEX Button text colour")));
+          ->setAttribute('placeholder', _t('CookieConsent.COOKIEBANNERBUTTONCOLOURVALUE', "e.g. #8ec760/rgb(142,199,96)/rgba(142,199,96,.8)"))
+          ->setMaxLength(25);
+        $fields->addFieldToTab('Root.CookieConsent', $CookieBannerButtonTextColourField = new TextField('CookieBannerButtonTextColour', _t('CookieConsent.COOKIEBANNERBUTTONTEXTCOLOUR', "Button text colour HEX/RGB/RGBA")));
         $CookieBannerButtonTextColourField
-          ->setAttribute('placeholder', _t('CookieConsent.COOKIEBANNERBUTTONTEXTCOLOURVALUE', "e.g. ffffff (without leading #)"))
-          ->setMaxLength(6);
+          ->setAttribute('placeholder', _t('CookieConsent.COOKIEBANNERBUTTONTEXTCOLOURVALUE', "e.g. #ffffff/rgb(255,255,255)/rgba(255,255,255,.8)"))
+          ->setMaxLength(25);
 
         $fields->addFieldToTab('Root.CookieConsent', new LiteralField('LinkToPrivacyLiteral', '<p><strong>'._t('CookieConsent.LINKTOPRIVACYLITERAL', "Learn more link").'</strong></p>'));
         $fields->addFieldToTab('Root.CookieConsent', new TreeDropdownField("LinkToPrivacyID", _t('CookieConsent.LINKTOPRIVACY', "Link to your own policy"), "SiteTree"));
