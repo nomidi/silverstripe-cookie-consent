@@ -1,5 +1,7 @@
 # silverstripe-cookie-consent
 
+[![Build Status](https://travis-ci.org/nomidi/silverstripe-seo-hero-tool-analysis.svg?branch=master)](https://travis-ci.org/nomidi/silverstripe-seo-hero-tool-analysis)
+
 Silverstripe Cookie Consent is a module which enables to configure
 the [cookie consent JavaScript plugin](https://cookieconsent.insites.com/) from [Insites](https://insites.com/)
 simply via the Administrator Backend.
