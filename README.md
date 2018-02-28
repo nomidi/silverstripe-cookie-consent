@@ -28,7 +28,7 @@ act accordingly. With this module you are just setting the configuration for Coo
 
 ### Is Active
 
-Defines if the Module is in avtive state or notice.
+Defines if the Module is in avtive state or not.
 
 ### Use CDN?
 
