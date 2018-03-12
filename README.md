@@ -36,7 +36,7 @@ If ticked the plugin will load the css/js from a CDN (cloudflare).
 
 ### Position // Layout // Settings
 
-A demonstration on the effect of these parameters can be found on the download page at (https://cookieconsent.insites.com/download/).
+A demonstration on the effect of these parameters can be found on the download page at [Insites - Download Page](https://cookieconsent.insites.com/download/).
 
 ### Colours
 
@@ -45,6 +45,7 @@ For the colours it is possible to use HEX Values with leading # or RGBA Values (
 ### Compliance Type - Advanced
 
 Please be aware that you can configure the advanced versions via the Site Configuration. But this will have no effect to your website. If you are planning to use the opt-in or opt-out version of this module you will have to ensure on your own that the website works accordingly.
+It is advised to use callback hooks for the advanced workflow. Information on that can be found at [Insites - Disabling Cookies](https://cookieconsent.insites.com/documentation/disabling-cookies/)
 
 ## Translations
 
