@@ -35,7 +35,7 @@ class CookieConsentTask extends BuildTask
         // write content into template
         $csshandle = fopen('../'.COOKIE_CONSENT_PATH.$this->destination_folder.$this->destination_css_name, "w");
         // add style at the beginning and end
-        $cssfile = "<style>".$cssfile."</style>";
+        $cssfile = "<style>.cc-message{padding-right:20px}".$cssfile."</style>";
         $cssreturn = fwrite($csshandle, $cssfile);
         //fclose($csshandle);
         if ($cssreturn > 0 && $jsreturn > 0 && fclose($csshandle) && fclose($jshandle)) {
