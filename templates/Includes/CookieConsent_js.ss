@@ -27,7 +27,7 @@ window.cookieconsent.initialise({
   <% else_if $CookieLayout == 'edgeless' %>
   ,"theme": "edgeless"
   <% end_if %>
-  <% if $CookiePosition == 'top' %>
+  <% if $CookiePosition == 'bannertop' %>
   ,"position": "top"
   <% else_if $CookiePosition == 'bannertoppushdown' %>
   ,"position": "top"
