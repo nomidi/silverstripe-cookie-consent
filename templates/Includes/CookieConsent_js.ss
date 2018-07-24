@@ -2,6 +2,9 @@
 <script>
 window.addEventListener("load", function(){
 window.cookieconsent.initialise({
+  "cookie": {
+    "expiryDays": <% if $CookieExpirationDate %>$CookieExpirationDate<% else %>365<% end_if %>
+  },
   "palette": {
     "popup": {
       "background": "<% if $CookieBannerColour %>$CookieBannerColour<% else %>#efefef<% end_if %>",

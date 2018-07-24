@@ -16,7 +16,8 @@ class CookieConsent_Settings extends DataExtension
         'CookieDismissButtonText'=>'Varchar(80)',
         'CookieAcceptButtonText'=>'Varchar(80)',
         'CookieDeclineButtonText'=>'Varchar(80)',
-        'CookieConsentUseCDN' => 'Boolean'
+        'CookieConsentUseCDN' => 'Boolean',
+        'CookieExpirationDate' => "Varchar(25)",
     );
 
     private static $has_one = array(
@@ -90,5 +91,8 @@ class CookieConsent_Settings extends DataExtension
 
         $fields->addFieldToTab('Root.CookieConsent', $CookieDeclineButtonTextField = new TextField('CookieDeclineButtonText', _t('CookieConsent.COOKIEDECLINEBUTTONTEXT', "Decline button text")));
         $CookieDeclineButtonTextField->setAttribute('placeholder', _t('CookieConsent.COOKIEDECLINEBUTTONTEXTVALUE', "Decline"));
+
+        $fields->addFieldToTab('Root.CookieConsent', $CookieExpirationDateField = new TextField('CookieExpirationDate', _t('CookieConsent.COOKIEEXPIRATIONDATETEXT', 'Expiration Date of Cookie')));
+        $CookieExpirationDateField->setAttribute('placeholder', _t('CookieConsent.COOKIEEXPIRATIONDATEVALUE', "365"));
     }
 }
