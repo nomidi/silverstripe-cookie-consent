@@ -17,7 +17,7 @@ de:
     COOKIECOMPLIANCETYPEOPTOUT: 'Opt-Out für Benutzer anbieten (Erweitert)'
     COOKIECOMPLIANCETYPEOPTIN: 'Opt-In für Benutzer anbieten (Erweitert)'
     COOKIECOMPLIANCETYPETELL: 'Benutzern nur sagen, dass Cookies genutzt werden'
-    COOKIECONSENTLITERAL: 'Mehr informationen zu Cookies Consent finden sie unter <a href=''https://cookieconsent.insites.com'' target=''_blank'' rel=''noopener''>cookieconsent.insites.com</a>'
+    COOKIECONSENTLITERAL: 'Mehr informationen zu Cookies Consent finden sie unter <a href=''https://silverstripe-cookie-consent.insites.com'' target=''_blank'' rel=''noopener''>silverstripe-cookie-consent.insites.com</a>'
     COOKIECONSENTUSECDN: 'Über CDN einbinden?'
     COOKIEDISMISSBUTTONTEXT: 'Text für den Verstanden/OK Button.'
     COOKIEDISMISSBUTTONTEXTVALUE: 'OK!'

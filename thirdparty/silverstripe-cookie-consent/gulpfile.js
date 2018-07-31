@@ -13,7 +13,7 @@ var diff = require('gulp-diff');
 
 var buildFolder = './build';
 var jsBuildFiles = [
-  './src/cookieconsent.js'
+  './src/silverstripe-cookie-consent.js'
 ];
 var cssBuildFiles = [
   // defined explicitly so they are combined in order
@@ -69,7 +69,7 @@ gulp.task('verify:diff', function(callback) {
 
 gulp.task('build:release', function(callback) {
   if (yargs.argv.tag===undefined) {
-    throw "A version number (e.g. 3.0.1) is required to build a release of cookieconsent"
+    throw "A version number (e.g. 3.0.1) is required to build a release of silverstripe-cookie-consent"
   }
 
   return runSequence('build', 'bump', callback)

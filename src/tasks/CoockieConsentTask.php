@@ -13,10 +13,10 @@ class CookieConsentTask extends BuildTask
 {
     protected $title = "Cookie Consent Task";
     protected $description = "Creates from the .css and .js files Silverstripe Template files";
-    protected $original_folder = "/thirdparty/cookieconsent/build/";
+    protected $original_folder = "/thirdparty/silverstripe-cookie-consent/build/";
     protected $destination_folder ="/templates/Includes/";
-    protected $original_js_name = "cookieconsent.min.js";
-    protected $original_css_name = "cookieconsent.min.css";
+    protected $original_js_name = "silverstripe-cookie-consent.min.js";
+    protected $original_css_name = "silverstripe-cookie-consent.min.css";
     protected $destination_js_name = "CookieConsent_min_js.ss";
     protected $destination_css_name = "CookieConsent_min_css.ss";
 

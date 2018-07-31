@@ -1,5 +1,5 @@
 ---
-Name: cookieconsent
+Name: silverstripe-cookie-consent
 Before:
   - mysite
 After:

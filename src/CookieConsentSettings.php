@@ -42,7 +42,7 @@ class CookieConsentSettings extends DataExtension
     public function updateCMSFields(FieldList $fields)
     {
         $fields->addFieldToTab("Root", new Tab('CookieConsent'));
-        $fields->addFieldToTab('Root.CookieConsent', new LiteralField('CookieConsentLiteral', '<p><strong>'._t('CookieConsent.COOKIECONSENTLITERAL', "Find ore information about cookie consent on <a href='https://cookieconsent.insites.com' target='_blank' rel='noopener'>cookieconsent.insites.com</a>").'</strong></p>'));
+        $fields->addFieldToTab('Root.CookieConsent', new LiteralField('CookieConsentLiteral', '<p><strong>'._t('CookieConsent.COOKIECONSENTLITERAL', "Find ore information about cookie consent on <a href='https://silverstripe-cookie-consent.insites.com' target='_blank' rel='noopener'>silverstripe-cookie-consent.insites.com</a>").'</strong></p>'));
         $fields->addFieldToTab('Root.CookieConsent', CheckboxField::create("CookieConsentIsActive")->setTitle(_t('CookieConsent.ISACTIVE', "Is Active")));
         $fields->addFieldToTab('Root.CookieConsent', CheckboxField::create('CookieConsentUseCDN', _t('CookieConsent.COOKIECONSENTUSECDN', "Use CDN?")));
         $CookiePositionValues = array(

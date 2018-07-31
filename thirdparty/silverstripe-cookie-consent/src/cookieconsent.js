@@ -221,8 +221,8 @@
       //    and to set the focus to the first interactive control (http://w3c.github.io/aria-in-html/)
       elements: {
         header: '<span class="cc-header">{{header}}</span>&nbsp;',
-        message: '<span id="cookieconsent:desc" class="cc-message">{{message}}</span>',
-        messagelink: '<span id="cookieconsent:desc" class="cc-message">{{message}} <a aria-label="learn more about cookies" role=button tabindex="0" class="cc-link" href="{{href}}" rel="noopener noreferrer nofollow" target="_blank">{{link}}</a></span>',
+        message: '<span id="silverstripe-cookie-consent:desc" class="cc-message">{{message}}</span>',
+        messagelink: '<span id="silverstripe-cookie-consent:desc" class="cc-message">{{message}} <a aria-label="learn more about cookies" role=button tabindex="0" class="cc-link" href="{{href}}" rel="noopener noreferrer nofollow" target="_blank">{{link}}</a></span>',
         dismiss: '<a aria-label="dismiss cookie message" role=button tabindex="0" class="cc-btn cc-dismiss">{{dismiss}}</a>',
         allow: '<a aria-label="allow cookies" role=button tabindex="0"  class="cc-btn cc-allow">{{allow}}</a>',
         deny: '<a aria-label="deny cookies" role=button tabindex="0" class="cc-btn cc-deny">{{deny}}</a>',
@@ -235,7 +235,7 @@
       // The placeholders {{classes}} and {{children}} both get replaced during initialisation:
       //  - {{classes}} is where additional classes get added
       //  - {{children}} is where the HTML children are placed
-      window: '<div role="dialog" aria-live="polite" aria-label="cookieconsent" aria-describedby="cookieconsent:desc" class="cc-window {{classes}}"><!--googleoff: all-->{{children}}<!--googleon: all--></div>',
+      window: '<div role="dialog" aria-live="polite" aria-label="silverstripe-cookie-consent" aria-describedby="silverstripe-cookie-consent:desc" class="cc-window {{classes}}"><!--googleoff: all-->{{children}}<!--googleon: all--></div>',
 
       // This is the html for the revoke button. This only shows up after the user has selected their level of consent
       // It can be enabled of disabled using the `revokable` option
@@ -296,7 +296,7 @@
       palette: null,
 
       // Some countries REQUIRE that a user can change their mind. You can configure this yourself.
-      // Most of the time this should be false, but the `cookieconsent.law` can change this to `true` if it detects that it should
+      // Most of the time this should be false, but the `silverstripe-cookie-consent.law` can change this to `true` if it detects that it should
       revokable: false,
 
       // if true, the revokable button will tranlate in and out
@@ -319,7 +319,7 @@
       // By default the created HTML is automatically appended to the container (which defaults to <body>). You can prevent this behaviour
       // by setting this to false, but if you do, you must attach the `element` yourself, which is a public property of the popup instance:
       // 
-      //     var instance = cookieconsent.factory(options);
+      //     var instance = silverstripe-cookie-consent.factory(options);
       //     document.body.appendChild(instance.element);
       //
       autoAttach: true,
@@ -977,7 +977,7 @@
 
     // When the service uses a script, the chances are that you'll have to use the script to make additional requests. In these
     // cases, the services `callback` property is called with a `done` function. When performing async operations, this must be called
-    // with the data (or Error), and `cookieconsent.locate` will take care of the rest
+    // with the data (or Error), and `silverstripe-cookie-consent.locate` will take care of the rest
     var defaultOptions = {
 
       // The default timeout is 5 seconds. This is mainly needed to catch JSONP requests that error.
