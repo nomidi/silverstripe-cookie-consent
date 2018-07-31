@@ -22,7 +22,7 @@
     "extra": {
         "installer-name": "cookieconsent",
         "expose": [
-            "thirdparty/cookieconsent/build"
+            "thirdparty/silverstripe-cookie-consent/build"
         ]
     },
     "support": {
