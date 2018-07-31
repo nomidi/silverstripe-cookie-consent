@@ -42,7 +42,7 @@ window.cookieconsent.initialise({
   <% end_if %>
   ,"content": {
     "message": "<% if $CookieMessage %>$CookieMessage<% else %><%t CookieConsent.COOKIEMESSAGEVALUE 'This website uses cookies to ensure you get the best experience on our website.'%><% end_if %>"
-    <% if $LinkToPrivacy %>,"href": "$LinkToPrivacy.AbsoluteLink" <% end_if %>
+     <% if $LinkToPrivacy %>,"href": "$LinkToPrivacy.AbsoluteLink" <% end_if %>
     ,"link": "<% if $CookieLearnMoreText%>$CookieLearnMoreText<% else %><%t CookieConsent.COOKIESLEARNMORETEXT 'Learn more' %><% end_if %>"
     ,"dismiss": "<% if $CookieDismissButtonText %>$CookieDismissButtonText<% else %><%t CookieConsent.COOKIEDISMISSBUTTONTEXTVALUE 'Got it!' %><% end_if %>"
     <% if $CookieComplianceType == 'optin' %>,"allow":"<% if $CookieAcceptButtonText %>$CookieAcceptButtonText<% else %><%t CookieConsent.COOKIEACCEPTBUTTONTEXTVALUE 'Allow cookies' %><% end_if %>"

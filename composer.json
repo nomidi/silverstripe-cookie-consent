@@ -22,7 +22,7 @@
     "extra": {
         "installer-name": "cookieconsent",
         "expose": [
-            "thirdparty"
+            "thirdparty/cookieconsent/build"
         ]
     },
     "support": {

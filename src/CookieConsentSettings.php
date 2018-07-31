@@ -36,7 +36,7 @@ class CookieConsentSettings extends DataExtension
     );
 
     private static $has_one = array(
-      'LinkToPrivacy' => 'SiteTree'
+      'LinkToPrivacy' => SiteTree::class
     );
 
     public function updateCMSFields(FieldList $fields)
