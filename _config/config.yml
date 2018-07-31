@@ -1,12 +1,15 @@
 ---
-Name: cookie-consent
-Before: 'mysite/*'
-After: 'framework/*','cms/*'
+Name: cookieconsent
+Before:
+  - mysite
+After:
+  - coreconfig
+  - cmsextensions
 ---
-Page_Controller:
+PageController:
   extensions:
-    - CookieConsent_Extension
+  - Nomidi\CookieConsent\CookieConsentExtension
 
-SiteConfig:
+SilverStripe\SiteConfig\SiteConfig:
   extensions:
-    - CookieConsent_Settings
+  - Nomidi\CookieConsent\CookieConsentSettings

@@ -6,7 +6,7 @@
         "cookieconsent"
     ],
     "version": "1.0.0",
-    "type": "silverstripe-module",
+    "type": "silverstripe-vendormodule",
     "authors": [{
         "name": "Bastian Fritsch",
         "email": "mail@bastian-fritsch.de",
@@ -20,19 +20,23 @@
         "role": "Developer"
     }],
     "extra": {
-    "installer-name": "cookie-consent"
+        "installer-name": "cookieconsent",
+        "expose": [
+            "thirdparty"
+        ]
     },
     "support": {
     "issues": "https://github.com/nomidi/silverstripe-cookie-consent/issues"
     },
     "license": "BSD-3-Clause",
     "require": {
-        "php": ">=5.3.2",
-        "composer/installers": "~1.0",
-        "silverstripe/cms": "~3.2"
+        "silverstripe/asset-admin": "^1.1",
+        "silverstripe/assets": "^1.1",
+        "silverstripe/config": "^1",
+        "silverstripe/framework": "^4.1"
     },
     "require-dev": {
-		    "phpunit/PHPUnit": "~3.7@stable"
-	  }
+        "phpunit/phpunit": "^5.7"
+    }
 
 }

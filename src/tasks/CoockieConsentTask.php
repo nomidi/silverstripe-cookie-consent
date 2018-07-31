@@ -1,5 +1,11 @@
 <?php
 
+namespace Nomidi\CookieConsent;
+
+
+
+use SilverStripe\Dev\BuildTask;
+
 /**
  * Task for creating the Template Files if a newer Version of CookieConsent gets integrated
  */

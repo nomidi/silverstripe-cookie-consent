@@ -1,9 +1,19 @@
 <?php
 
-class CookieConsent_Extension extends Extension
+namespace Nomidi\CookieConsent;
+
+
+use SilverStripe\Core\Extension;
+use SilverStripe\Dev\Debug;
+use SilverStripe\SiteConfig\SiteConfig;
+use SilverStripe\View\Requirements;
+
+class CookieConsentExtension extends Extension
 {
     public function onBeforeInit()
     {
+        debug::show('hier sind wir');
+        debug::show(COOKIE_CONSENT_PATH);
         $siteConfig = SiteConfig::current_site_config();
         if ($siteConfig->CookieConsentIsActive) {
             if ($siteConfig->CookieConsentUseCDN) {

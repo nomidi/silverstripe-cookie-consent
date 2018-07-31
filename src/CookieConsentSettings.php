@@ -1,5 +1,20 @@
 <?php
-class CookieConsent_Settings extends DataExtension
+
+namespace Nomidi\CookieConsent;
+
+use SilverStripe\CMS\Model\SiteTree;
+use SilverStripe\Forms\CheckboxField;
+use SilverStripe\Forms\DropdownField;
+use SilverStripe\Forms\FieldList;
+use SilverStripe\Forms\LiteralField;
+use SilverStripe\Forms\Tab;
+use SilverStripe\Forms\TextareaField;
+use SilverStripe\Forms\TextField;
+use SilverStripe\Forms\TreeDropdownField;
+use SilverStripe\ORM\DataExtension;
+
+
+class CookieConsentSettings extends DataExtension
 {
     private static $db = array(
         'CookiePosition' => "Enum('bannerbottom, bannertop, bannertoppushdown, floatingleft,floatingright', 'bannerbottom')",
@@ -64,7 +79,7 @@ class CookieConsent_Settings extends DataExtension
           ->setMaxLength(25);
 
         $fields->addFieldToTab('Root.CookieConsent', new LiteralField('LinkToPrivacyLiteral', '<p><strong>'._t('CookieConsent.LINKTOPRIVACYLITERAL', "Learn more link").'</strong></p>'));
-        $fields->addFieldToTab('Root.CookieConsent', new TreeDropdownField("LinkToPrivacyID", _t('CookieConsent.LINKTOPRIVACY', "Link to your own policy"), "SiteTree"));
+        $fields->addFieldToTab('Root.CookieConsent', new TreeDropdownField("LinkToPrivacyID", _t('CookieConsent.LINKTOPRIVACY', "Link to your own policy"), SiteTree::class));
         $fields->addFieldToTab('Root.CookieConsent', new LiteralField('LinkToPrivacyLiteralOr', _t('CookieConsent.LINKTOPRIVACYLITERALOR', "Or")));
         $fields->addFieldToTab('Root.CookieConsent', new CheckboxField("CookiesAndYouIsActive", _t('CookieConsent.COOKIESANDYOUISACTIVE', "Link to cookiesandyou.com")));
         $fields->addFieldToTab('Root.CookieConsent', $CookiesLearnMoreField = new TextField('CookieLearnMoreText', _t('CookieConsent.COOKIESLEARNMORETEXT', "Learn More")));
